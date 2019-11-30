@@ -81,8 +81,7 @@ After the installation your Raspberry device will be rebooted.
 Global config file located /opt/ttn-gateway/bin/global_conf.json
 
 
-
-### Checking
+### Logging
 
 *logs are stored in /var/log/syslog
 command to check logs in real time : tail -f /var/log/syslog
@@ -93,7 +92,7 @@ command to check logs in real time : tail -f /var/log/syslog
 Extra: Using the onboard GPS data as gateway location
 The installation package uses “fake_gps” by default. This means that the program will ignore the GPS data received from the onboard GPS module. In order to use “real” GPS, one line  "fake_gps": false,  should be added to the /opt/ttn-gateway/bin/local_conf.json file in order to override the default setting in the global_conf.json file. The result should look like this:
 
-To use USB GPS dongle specify /dev/ttyACM0 in configuration file
+To use USB GPS dongle specify your usb device, usually /dev/ttyACM0 in configuration file
 
 EXAMPLE: 
 /* GPS configuration */
@@ -116,5 +115,7 @@ EXAMPLE:
 * Select the correct antenna placement according to your plans (indoor or outdoor)
 * Confirm clicking Register gateway
 
+###Registration example
+![Registration example](img/RegistrationExample.png)
 
 
