@@ -50,10 +50,10 @@ Interfacing Options -> SPI
 ![Foto Raspberry + hat + lora](img/raspiAndHatAndLoRa.jpg)
 
 ### Connect Antenna
-![Foto Raspberry + hat + lora + antenna](img/gatewayAndGPS.jpg)
+![Foto Raspberry + hat + lora + antenna](img/gatewayAndAntena.jpg)
 
 ### Connect GPS
-![Foto Raspberry + hat + lora + antena + USB GPS](img/gatewayAndAntena.jpg)
+![Foto Raspberry + hat + lora + antena + USB GPS](img/gatewayAndGPS.jpg)
 
 ### !!!NB!!! Antena has to be always connected otherwise you can damage your equipment!
 
