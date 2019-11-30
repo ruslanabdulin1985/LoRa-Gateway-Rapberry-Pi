@@ -30,21 +30,32 @@ $ sudo apt-get update
 $ sudo apt-get upgrade
 $ sudo apt-get install git
 ```
+* Enter configuration mode
+```console
+$ sudo raspi-config
+```
+* Enable interface SPI
+Interfacing Options -> SPI
+
 ***
 
 ## Connect Equipment together
+### Attach backplane holders
+![Foto Raspberry](img/raspi.jpg)
 
-* Foto Raspberry
+### Connect backplane
+![Foto Rapberry + hat](img/raspiAndHat.jpg)
 
-* Foto Rapberry + hat
+### Connect  IMST IC880A-SPI 
+![Foto Raspberry + hat + lora](img/raspiAndHatAndLoRa.jpg)
 
-* Foto Raspberry + hat + lora
+### Connect Antenna
+![Foto Raspberry + hat + lora + antenna](img/gatewayAndGPS.jpg)
 
-* Foto Raspberry + hat + lora + antenna
+### Connect GPS
+![Foto Raspberry + hat + lora + antena + USB GPS](img/gatewayAndAntena.jpg)
 
-* Foto Raspberry + hat + lora + antena + USB GPS
-
-# !!!NB!!! Antena has to be always connected otherwise you can damage your equipment!
+### !!!NB!!! Antena has to be always connected otherwise you can damage your equipment!
 
 ***
 
@@ -96,4 +107,14 @@ EXAMPLE:
 
 ## Register your gateway on TTN
 
-IN PROGRESS
+* Login to thethingsnetwork.org Console
+* Click on Gateways -> register gateway
+* Enable checkbox I'm using the legacy packet forwarder
+* Enter your Gateway EUI (if is printed on start and end of the installer, also can be found in the log file /var/log/syslog)
+* Enter any description
+* Select Europe 868Mhz as frequency plan
+* Select the correct antenna placement according to your plans (indoor or outdoor)
+* Confirm clicking Register gateway
+
+
+
