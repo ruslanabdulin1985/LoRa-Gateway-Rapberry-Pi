@@ -96,7 +96,7 @@ To use USB GPS dongle specify your usb device, usually /dev/ttyACM0 in configura
 
 EXAMPLE: 
 /* GPS configuration */
-        "gps_tty_path": "/dev/ttyACM0",
+a unit is most commonly defined as a class, or a group of related functions often called a module. Keeping units relatively small is claimed to provide critical benefits, including:        "gps_tty_path": "/dev/ttyACM0",
         "fake_gps": false,
         "ref_latitude": 10,
         "ref_longitude": 20,
